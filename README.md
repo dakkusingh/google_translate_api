@@ -30,3 +30,28 @@ func main() {
 	// Output: "Tusī kivēṁ hō"
 }
 ```
+
+
+## Example usage - Punjabi to French:
+```
+package main
+
+import (
+	"fmt"
+
+	gta "github.com/dakkusingh/google_translate_api"
+)
+
+func main() {
+	text := "ਤੁਸੀ ਕਿਵੇਂ ਹੋ"
+	sourceLang := "pa"
+	targetLang := "fr"
+
+	translation, transliteration, _ := gta.Translate(text, sourceLang, targetLang)
+	
+	fmt.Println(translation)
+	fmt.Println(transliteration)
+	// Output: "Comment allez vous"
+	// Output: "Tusī kivēṁ hō"
+}
+```
