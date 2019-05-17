@@ -19,12 +19,12 @@ import (
 
 func main() {
 	text := "ਤੁਸੀ ਕਿਵੇਂ ਹੋ"
-  sourceLang := "pa"
-  targetLang := "en"
+	sourceLang := "pa"
+	targetLang := "en"
 
 	translation, transliteration, _ := gta.Translate(text, sourceLang, targetLang)
 	
-  fmt.Println(translation)
+	fmt.Println(translation)
 	fmt.Println(transliteration)
 	// Output: "How are you"
 	// Output: "Tusī kivēṁ hō"
