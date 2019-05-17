@@ -95,10 +95,3 @@ func Translate(source, sourceLang, targetLang string) (string, string, error) {
 		return "err", "err", errors.New("Error getting results")
 	}
 }
-
-// func main() {
-// 	const text string = "ਤਆਬਯਾਰੀ"
-// 	//Translate(text, "pa", "en")
-// 	res1, res2, _ := Translate(text, "en", "fr")
-// 	fmt.Println(res1, res2)
-// }
